@@ -39,6 +39,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
+            <version>3.5.7</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <!--  这个dependencyManagement下的dependencies表示子级只要引用我这个父级那么下面的所有包都在可继承自父亲  -->
