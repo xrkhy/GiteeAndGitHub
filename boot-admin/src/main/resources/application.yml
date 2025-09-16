@@ -1,0 +1,20 @@
+# mybatis-plus:
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml # 扫描mappers映射文件
+  type-aliases-package: com.hsh.bootcommon.pojo # 扫描别名 注意这里的包位置
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql到控制台
+    map-underscore-to-camel-case: false # 关闭驼峰映射
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 逻辑删除字段
+      logic-delete-value: 1 # 逻辑删除字段值
+      logic-not-delete-value: 0 # 逻辑未删除字段值
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/smbms?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+
