@@ -12,7 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // 扫描mapper包 如果有多个mapper则使用@MapperScan("com.hsh.**.mapper")
 @MapperScan("com.hsh.bootsystem.mapper")
 public class BootAdminApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(BootAdminApplication.class, args);
     }
